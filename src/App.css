@@ -1,0 +1,232 @@
+html{
+  overflow-x: hidden;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x : hidden;
+}
+.container{
+  position: relative;
+  display: flex;
+  top: 0%;
+  left: 10px;
+  width:350px;
+  height: 700px;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 10px;
+}
+.small-container{
+  position: absolute;
+  left: 370px;
+  width: 1020px;
+  height: 100%;
+}
+
+.head{
+  position: absolute;
+  right: -250px;
+  font-size: 40px;
+  color: #666;
+}
+.list{
+  list-style: none;
+}
+.inputValue{
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  width: 305px;
+  height: 30px;
+  padding:10px;
+  background: none;
+  font-size: 13px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.search{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 305px;
+  height: 30px;
+  padding:10px;
+  background: none;
+  border: none;
+  outline: none;
+}
+.search:focus{
+  border-bottom: 1px solid #777;
+}
+.btn{
+  position: absolute;
+  top: 170px;
+  left: 10px;
+  width: 330px;
+  height: 35px;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #2196F3;
+  border: none;
+}
+.list{
+  position: absolute;
+  right: -290%;
+  top: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+@media screen and (max-width:767px) {
+  .list{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      left: -7%;
+      top: 700px;
+      z-index: 100;
+  }
+  .head{
+      position: absolute;
+      left: -250px;
+      top: -90px;
+  }
+  .container{
+      position: relative;
+      top: 70px;
+  }
+}    
+.listItem{
+  position: relative;
+  width: 300px;
+  height: 150px;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: left;
+  padding-top: 10px;
+}
+.img{
+  position: absolute;
+  width: 40px;
+  top: -15px;
+  right: -20px;
+  transform: rotate(-13deg);
+}
+.delet-btn{
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  background: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 20px;
+  color: #333;
+
+  height: 20px;
+}
+.arrowUp{
+  position: absolute;
+  background: white;
+  border: none;
+  font-weight: bold;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 10px;
+  color: #0f0f0f;
+  font-size: 16px;
+}
+.arrowDown{
+  position: absolute;
+  background: white;
+  border: none;
+  font-weight: bold;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 10px;
+  color: #0f0f0f;
+  font-size: 16px;
+}
+.pickColor{
+  position: absolute;
+  top: 540px;
+  color: #777;
+  font-size: 18px;
+  font-weight: bold;
+  left: 20px;
+}
+.buttons{
+  position: absolute;
+  top: 630px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0 , 1fr));
+  gap: 2px;
+  margin-left:15px ;
+}
+.buttons button{
+  width: 77px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.tasknum{
+  margin-left: 120px;
+}
+.taskItem{
+  margin-left: 20px;
+}
+.checkbox-container {
+position: absolute;
+top: 210px;
+left: 10px;
+display: flex;
+align-items: center;
+margin-top: 10px;
+font-size: 12px;
+font-weight: bold;
+color: #333;
+cursor: pointer;
+}
+.checkbox-container input[type="checkbox"] {
+width: 14px;
+height: 14px;
+accent-color: #2196F3; 
+cursor: pointer;
+}
+.tags{
+position: absolute;
+top: 400px;
+width: 300px;
+margin-left: 15px;
+}
+.tags .tags-list{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.tags .tags-list .single{
+font-size: 12px;
+font-weight: bold;
+color: #666;
+}
+.tags .tags-list .tasknumber{
+width: 26px;
+height: 18px;
+background-color: #cdcaca;
+border-radius: 3px;
+font-size: 12px;
+color: #3f3f3f;
+padding-top: 2px;
+}
+.tagsHash{
+font-size: 14px;
+font-weight: bold;
+text-align: left;
+color: #777;
+}
